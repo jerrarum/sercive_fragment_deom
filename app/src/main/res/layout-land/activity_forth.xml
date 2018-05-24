@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout tools:context=".ForthActivity"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <fragment
+        android:layout_weight="1"
+        android:name="com.example.hp.mediaplayer.TextFragment"
+        android:id="@+id/text_fragment_land"
+        tools:layout="@layout/fragment_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/button_framgment_land"
+        android:name="com.example.hp.mediaplayer.ButtonsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_buttons" />
+
+</LinearLayout>
